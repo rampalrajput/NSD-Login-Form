@@ -1,0 +1,186 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Background Theme */
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🔹 Container Layout */
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* 🔹 Left Panel */
+.left-panel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px; /* ✅ Added Left Padding */
+}
+
+/* 🔹 Slider Box */
+.slider-box {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 🔹 Notification Box */
+.notification-box {
+    height: 50%;
+    margin-top: 10px;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.notification-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* 🔹 Right Panel: Login Form */
+.login-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff5e62;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* ✅ Changed Right Panel Color */
+    color: white; /* ✅ Changed text color for better contrast */
+}
+
+/* 🔹 Heading Style */
+.portal-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffde59; /* ✅ Light Yellow for Contrast */
+    margin-bottom: 20px;
+}
+
+/* 🔹 Form Styling */
+form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ddd; /* ✅ Lighter Font Color */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    background: white;
+    color: #333; /* ✅ Best Font Color for Readability */
+}
+
+input:focus, select:focus {
+    border-color: #ffde59;
+    box-shadow: 0px 0px 5px rgba(255, 222, 89, 0.5);
+}
+
+/* 🔹 Remember Me Checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.remember-me input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #ccc; /* ✅ Softer color */
+}
+
+/* 🔹 Login Button */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ffde59;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slider-box {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+/* 🔹 Forgot Password */
+.forgot-password {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
